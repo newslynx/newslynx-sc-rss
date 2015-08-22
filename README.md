@@ -1,4 +1,6 @@
-![travis-img](https://travis-ci.org/newslynx/newslynx-sc-rss.svg)
+[![Build status](https://travis-ci.org/newslynx/newslynx-sc-rss.svg)](https://travis-ci.org/newslynx/newslynx-sc-rss) [![Documentation Status](https://readthedocs.org/projects/newslynx-sc-rss/badge/?version=latest)](https://readthedocs.org/projects/newslynx-sc-rss/?badge=latest)
+                
+
 newslynx-sc-rss
 ==========================================================================================
 
