@@ -7,7 +7,8 @@ Ingest Articles from an RSS Feed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Extracts articles from an RSS Feed.
--  This Sous Chef runs the python module ``newslynx_sc_rss.Article``.
+-  This Sous Chef runs the python module
+   ``newslynx_sc_rss.feed.Article``.
 -  API Slug: ``rss-feed-to-article``
 
 Development
@@ -18,13 +19,13 @@ Pass runtime options to ``rss-feed-to-article`` and stream output.
 
 .. code:: bash
 
-    $ newslynx sc newslynx_sc_rss/article.yaml option=value1
+    $ newslynx sc newslynx_sc_rss/feed_to_article.yaml option=value1
 
 Alernatively pass in a recipe file
 
 .. code:: bash
 
-    $ newslynx sc newslynx_sc_rss/article.yaml --recipe=recipe.yaml
+    $ newslynx sc newslynx_sc_rss/feed_to_article.yaml --recipe=recipe.yaml
 
 API Usage
 ^^^^^^^^^
@@ -33,7 +34,7 @@ Add this Sous Chef to your authenticated org
 
 .. code:: bash
 
-    $ newslynx api sous-chefs create -d=newslynx_sc_rss/article.yaml
+    $ newslynx api sous-chefs create -d=newslynx_sc_rss/feed_to_article.yaml
 
 Create a Recipe with this Sous Chef with command line options.
 

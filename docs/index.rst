@@ -1,5 +1,7 @@
-|travis-img| newslynx-sc-rss
-==========================================================================================
+|Build status| |Documentation Status|
+
+newslynx-sc-rss
+===============
 
 This module contains all Sous Chefs which deal with RSS extraction.
 
@@ -150,7 +152,10 @@ What's in this module ?
 
    -  ``nose`` tests for ``newslynx-sc-rss``
 
-.. |travis-img| image:: https://travis-ci.org/newslynx/newslynx-sc-rss.svg
+.. |Build status| image:: https://travis-ci.org/newslynx/newslynx-sc-rss.svg
+   :target: https://travis-ci.org/newslynx/newslynx-sc-rss
+.. |Documentation Status| image:: https://readthedocs.org/projects/newslynx-sc-rss/badge/?version=latest
+   :target: https://readthedocs.org/projects/newslynx-sc-rss/?badge=latest
 
 Contents
 --------
