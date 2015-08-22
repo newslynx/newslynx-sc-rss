@@ -6,6 +6,9 @@ from .common import get_feed
 
 
 class Article(SousChef):
+    """
+    Extract Articles from an RSS Feed.
+    """
     timeout = 240
     extract = True
 
