@@ -22,20 +22,37 @@ options:
         default: pending
         help:
             placeholder: "pending"
-
+            description: |
+                Set the status of the resulting events. 
+                Choose from pending and approved. 
+                Defaults to pending.
+    
     set_event_title:
         input_type: text
         value_types: 
             - string
         default: null
         help:
-            placeholder: "Something amazing happened."
+            placeholder: "Promotion Event"
+            description: |
+                Set's the title of the resulting events. This can be a python format string which 
+                has access to all of an event's top-level keys:
+                IE:
+                "Content from {authors} at {created}."
+
 
     set_event_description:
         input_type: paragraph
         value_types: 
             - string
         default: null
+        help:
+            placeholder: "Promotion Event"
+            description: |
+                Set's the  description of the output events. This can be a python format string which 
+                has access to all of an event's top-level keys:
+                IE:
+                "{title}."
 
     set_event_tag_ids:
         input_type: checkbox

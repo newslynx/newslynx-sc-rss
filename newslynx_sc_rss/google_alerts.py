@@ -29,7 +29,7 @@ BAD_DOMAINS = [
 ]
 
 
-class Feed(SousChef):
+class Events(SousChef):
 
     def _fmt(self, obj):
         new = defaultdict()
