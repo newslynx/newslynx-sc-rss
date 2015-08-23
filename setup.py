@@ -29,7 +29,7 @@ VERSION = open(VERSION, 'r').read().strip()
 setup(
     name='newslynx-sc-rss',
     version=VERSION,
-    description='This module contains all Sous Chefs which deal with RSS extraction.',
+    description='',
     long_description=long_description,
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -39,7 +39,7 @@ setup(
         "Programming Language :: Python",
     ],
     keywords='',
-    author='Brian Abelson',
+    author='Merlynne',
     author_email='',
     url='http://github.com/newslynx/newslynx-sc-rss',
     license='MIT',

@@ -1,5 +1,3 @@
 nose
 sphinx
 newslynx
-jsonpath_rw
-gevent
