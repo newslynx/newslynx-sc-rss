@@ -14,7 +14,8 @@
 
 import os
 
-version_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../VERSION'))
+version_path = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '../VERSION'))
 VERSION = open(version_path).read()
 
 # If extensions (or modules to document with autodoc) are in another directory,

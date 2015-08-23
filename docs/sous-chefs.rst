@@ -3,6 +3,7 @@ Sous Chefs
 -------------
 **newslynx-sc-rss** provides access to the following Sous Chefs
 
+RUNS newslynx_sc_rss.feed.Article
 Ingest Articles from an RSS Feed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -79,6 +80,7 @@ accepts the following
 
 
 
+RUNS newslynx_sc_rss.google_alerts.Events
 Google Alerts to Event
 ~~~~~~~~~~~~~~~~~~~~~~
 
