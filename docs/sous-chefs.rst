@@ -11,22 +11,6 @@ Ingest Articles from an RSS Feed
    ``newslynx_sc_rss.feed.Article``.
 -  API Slug: ``rss-feed-to-article``
 
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``rss-feed-to-article`` and stream output.
-**NOTE** Will not execute the SousChef's ``load`` method.
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_rss/feed_to_article.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_rss/feed_to_article.yaml --recipe=recipe.yaml
-
 API Usage
 ^^^^^^^^^
 
@@ -63,6 +47,22 @@ method.
 
     $ newslynx api recipes cook id=<id> --passthrough **options
 
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``rss-feed-to-article`` and stream output.
+**NOTE** Will not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_rss/feed_to_article.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_rss/feed_to_article.yaml --recipe=recipe.yaml
+
 Options
 ^^^^^^^
 
@@ -86,22 +86,6 @@ Google Alerts to Event
 -  This Sous Chef runs the python module
    ``newslynx_sc_rss.google_alerts.Events``.
 -  API Slug: ``google-alert-to-event``
-
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``google-alert-to-event`` and stream output.
-**NOTE** Will not execute the SousChef's ``load`` method.
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_rss/google_alerts_to_event.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc newslynx_sc_rss/google_alerts_to_event.yaml --recipe=recipe.yaml
 
 API Usage
 ^^^^^^^^^
@@ -138,6 +122,22 @@ method.
 .. code:: bash
 
     $ newslynx api recipes cook id=<id> --passthrough **options
+
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``google-alert-to-event`` and stream output.
+**NOTE** Will not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_rss/google_alerts_to_event.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc newslynx_sc_rss/google_alerts_to_event.yaml --recipe=recipe.yaml
 
 Options
 ^^^^^^^
