@@ -6,12 +6,43 @@ newslynx-sc-rss
 Installation
 ------------
 
+Production
+~~~~~~~~~~
+
+To install ``newslynx-sc-rss`` for an active installation of
+``newslynx-core``, clone it and copy into ``~/.newslynx/sous-chefs``
+
 .. code:: bash
 
-    $ mkvirtualenv newslynx-sc-rss
     $ git clone https://github.com/newslynx/newslynx-sc-rss.git
-    $ cd newslynx-sc-rss
+    $ mv newslynx-sc-rss/ ~/.newslynx/sous-chefs/
+
+Now install it within the same virtual environment as ``newslynx``:
+
+.. code:: bash
+
+    $ cd ~/.newslynx/sous-chefs/newslynx-sc-rss/
     $ pip install .
+
+... and if you're running ``newslynx`` as ``sudo``
+
+.. code:: bash
+
+    $ cd ~/.newslynx/sous-chefs/newslynx-sc-rss/ 
+    $ sudo pip install .
+
+Finally, run ``newslynx sc-sync`` to ``newslynx-sc-rss``'s Sous Chefs
+for all organizations.
+
+.. code:: bash
+
+    $ newslynx sc-sync
+
+Development
+~~~~~~~~~~~
+
+If you want to run this SousChef on it's own environment, install it in
+a separate virutal environ
 
 Tests
 -----
@@ -20,7 +51,7 @@ Requires ``nose``
 
 .. code:: bash
 
-    $ nosetests
+    $ make all_tests
 
 Documentation
 -------------
