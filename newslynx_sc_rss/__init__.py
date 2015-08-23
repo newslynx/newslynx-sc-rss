@@ -1,2 +1,0 @@
-import feed
-import google_alerts
