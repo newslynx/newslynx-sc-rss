@@ -147,6 +147,8 @@ accepts the following
 
 -  ``feed_url``
 
+   -  An RSS Feed URL for a Google Alert
+
    -  **Required**
    -  Should be rendered with a ``text`` form.
    -  Accepts inputs of type:
@@ -157,6 +159,9 @@ accepts the following
       `here <https://www.google.com/alerts>`__
 
 -  ``must_link``
+
+   -  Only create an event if there is a link to an existing content
+      item.
 
    -  **Required**
    -  Should be rendered with a ``checkbox-single`` form.
@@ -172,6 +177,9 @@ accepts the following
 
 -  ``event_status``
 
+   -  Set the status of the resulting events. Choose from pending and
+      approved. Defaults to pending.
+
    -  Should be rendered with a ``select`` form.
    -  Choose from:
 
@@ -186,6 +194,10 @@ accepts the following
 
 -  ``set_event_title``
 
+   -  Set's the title of the resulting events. This can be a python
+      format string which has access to all of an event's top-level
+      keys: IE: "Content from {authors} at {created}."
+
    -  Should be rendered with a ``text`` form.
    -  Accepts inputs of type:
 
@@ -195,6 +207,10 @@ accepts the following
 
 -  ``set_event_description``
 
+   -  Set's the description of the output events. This can be a python
+      format string which has access to all of an event's top-level
+      keys: IE: "{title}."
+
    -  Should be rendered with a ``paragraph`` form.
    -  Accepts inputs of type:
 
@@ -203,6 +219,9 @@ accepts the following
    -  Defaults to ``None``
 
 -  ``set_event_tag_ids``
+
+   -  A list of Tag IDs or slugs to automatically apply to events
+      created by this recipe.
 
    -  Should be rendered with a ``checkbox`` form.
    -  Choose from:
@@ -215,6 +234,9 @@ accepts the following
    -  Defaults to ``[]``
 
 -  ``set_event_content_items``
+
+   -  A list of Content Item IDs and Titles to automatically apply to
+      events created by this Recipe.
 
    -  Should be rendered with a ``search`` form.
    -  Choose from:
