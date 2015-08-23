@@ -21,7 +21,7 @@ Pass runtime options to ``rss-feed-to-article`` and stream output.
 
     $ newslynx sc newslynx_sc_rss/feed_to_article.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -42,7 +42,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=rss-feed-to-article **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -55,7 +55,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
@@ -97,7 +97,7 @@ Pass runtime options to ``google-alert-to-event`` and stream output.
 
     $ newslynx sc newslynx_sc_rss/google_alerts_to_event.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -118,7 +118,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=google-alert-to-event **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -131,7 +131,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
