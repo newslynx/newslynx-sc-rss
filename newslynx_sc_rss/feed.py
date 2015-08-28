@@ -23,6 +23,7 @@ class Article(SousChef):
             self.max_date_last_run = dates.parse_iso(max_date_last_run)
         else:
             self.max_date_last_run = None
+        self.log.info('Got max date: {}'.format(self.max_date_last_run))
         self.publish_dates = []
 
     def run(self):
@@ -36,6 +37,7 @@ class Article(SousChef):
             domains.append(feed_domain)
 
         # iterate through RSS entries.
+        self.log.info('Fetching {}'.format(feed_url))
         for article in get_feed(feed_url, domains):
             article['type'] = 'article'  # set this type as article.
 
