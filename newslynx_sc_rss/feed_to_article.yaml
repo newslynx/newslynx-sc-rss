@@ -21,5 +21,6 @@ options:
         value_types:
             - url
         required: true
+        accepts_list: true
         help:
             placeholder: http://propalpatine.org/feed.xml
