@@ -62,7 +62,7 @@ class Article(SousChef):
         """
         status_resp = self.api.content.bulk_create(
             data=list(data), recipe_id=self.recipe_id)
-        return self.api.jobs.poll(**status_resp)
+        return list(self.api.jobs.poll(**status_resp))
 
     def teardown(self):
         """
