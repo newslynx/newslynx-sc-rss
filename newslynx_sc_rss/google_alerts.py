@@ -14,6 +14,7 @@ from newslynx.lib import article
 from newslynx.lib import url
 from newslynx.sc import SousChef
 from newslynx.util import gen_uuid
+from newslynx.exc import RequestError
 from newslynx_sc_rss.common import get_feed
 
 
@@ -122,9 +123,12 @@ class Events(SousChef):
         # iterate through RSS entries.
         entries = get_feed(feed_url, [feed_domain])
         p = Pool(self.options.get('max_workers', 5))
-        for event in p.imap_unordered(self.format, entries):
-            if event:
-                yield event
+        try:
+            for event in p.imap_unordered(self.format, entries):
+                if event:
+                    yield event
+        except RequestError:
+            self.log.warning('{} had no entries at this time'.format(feed_url))
 
     def load(self, data):
         """
