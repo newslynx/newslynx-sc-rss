@@ -16,6 +16,7 @@ from newslynx.lib import dates
 from newslynx.lib import author
 from newslynx.lib import html
 from newslynx.lib import url
+from newslynx.lib.text import slug
 from newslynx.lib import article
 from newslynx.lib import image
 from newslynx.util import uniq
@@ -215,7 +216,7 @@ class FeedExtractor(object):
         Get all tags.
         """
         tags = self.get_candidates(entry, TAG_CANDIDATE_JSONPATH)
-        return uniq([t.upper() for t in tags if t and t.strip() != ""])
+        return uniq([slug(t) for t in tags if t and t.strip() != ""])
 
     def get_url(self, entry):
         """
